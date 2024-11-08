@@ -15,3 +15,20 @@ body{
     transform-style: preserve-3d;
     transition: tranform 300ms;
 }
+.cartao__conteudo__resposta p {
+    color: var(--card-back-color);
+    font-weight: 700;
+}
+.cartao:hover .cartao__conteudo{
+    transform:rotateY(180deg) ;
+}
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.cartao__conteudo__resposta{
+    transform: rotateY(180deg);
+}
